@@ -86,7 +86,6 @@ public class TourPalestineOrganized {
         caps.setCapability("appium:platformVersion", "15.0");
         caps.setCapability("appium:deviceName", "emulator-5554");
         caps.setCapability("appium:appPackage", "com.element.tour_app");
-        //caps.setCapability("SystemPort", 8210);
         caps.setCapability("appium:appActivity", ".MainActivity");
         caps.setCapability("appium:noReset", true);
         caps.setCapability("appium:automationName", "UiAutomator2");
@@ -95,139 +94,139 @@ public class TourPalestineOrganized {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
-//    @Test (priority = 1)
-//    public void GiftsTest() throws InterruptedException {
-//
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(300));
-//
-//        WebElement LetGoButton = wait.until(ExpectedConditions.elementToBeClickable(letGoButton));
-//        LetGoButton.click();
-//        driver.findElement(
-//                AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" 
-//                        + "new UiSelector().description(\"Gifts and Oriental Antiques\"))"));
-//
-//        WebElement Gifts = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(giftsAndAntiques)));
-//        Gifts.click();
-//
-//        WebElement moreButton = driver.findElement(this.moreButton);
-//        moreButton.click();
-//
-//        WebElement phonecall = driver.findElement(this.phonecall);
-//        phonecall.click();
-//        	for (int i = 0; i < 3; i++) {
-//            ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//            Thread.sleep(2000);
-//        	}
-//        	
-//        WebElement location = driver.findElement(this.location);
-//        location.click();
-//        driver.executeScript("mobile: shell", ImmutableMap.of("command", "sleep 10"));
-//        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//
-//        WebElement Hebron = wait.until(
-//                ExpectedConditions.elementToBeClickable(this.hebron));
-//        Hebron.click();
-//
-//        WebElement image = wait.until(ExpectedConditions.elementToBeClickable(this.image));
-//        image.click();
-//        Thread.sleep(5000);
-//        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//        Thread.sleep(5000);
-//
-//        WebElement mainbutton = wait
-//                .until(ExpectedConditions.elementToBeClickable(this.mainButton));
-//        mainbutton.click();
-//
-//        WebElement English = wait.until(ExpectedConditions.elementToBeClickable(this.english));
-//        English.click();
-//        WebElement Arabic = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
-//        Arabic.click();
-//        Thread.sleep(5000);
-//
-//        WebElement mainbutton2 = wait
-//                .until(ExpectedConditions.elementToBeClickable(this.mainButton));
-//        mainbutton2.click();
-//        WebElement Arabic2 = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
-//        Arabic2.click();
-//        Thread.sleep(5000);
-//
-//        WebElement English2 = wait.until(ExpectedConditions.elementToBeClickable(this.english));
-//        English2.click();
-//        Thread.sleep(5000);
-//    }
+   @Test (priority = 1)
+   public void GiftsTest() throws InterruptedException {
+
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(300));
+
+       WebElement LetGoButton = wait.until(ExpectedConditions.elementToBeClickable(letGoButton));
+       LetGoButton.click();
+       driver.findElement(
+               AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" 
+                       + "new UiSelector().description(\"Gifts and Oriental Antiques\"))"));
+
+       WebElement Gifts = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(giftsAndAntiques)));
+       Gifts.click();
+
+       WebElement moreButton = driver.findElement(this.moreButton);
+       moreButton.click();
+
+       WebElement phonecall = driver.findElement(this.phonecall);
+       phonecall.click();
+       	for (int i = 0; i < 3; i++) {
+           ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+           Thread.sleep(2000);
+       	}
+       	
+       WebElement location = driver.findElement(this.location);
+       location.click();
+       driver.executeScript("mobile: shell", ImmutableMap.of("command", "sleep 10"));
+       ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+
+       WebElement Hebron = wait.until(
+               ExpectedConditions.elementToBeClickable(this.hebron));
+       Hebron.click();
+
+       WebElement image = wait.until(ExpectedConditions.elementToBeClickable(this.image));
+       image.click();
+       Thread.sleep(5000);
+       ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+       Thread.sleep(5000);
+
+       WebElement mainbutton = wait
+               .until(ExpectedConditions.elementToBeClickable(this.mainButton));
+       mainbutton.click();
+
+       WebElement English = wait.until(ExpectedConditions.elementToBeClickable(this.english));
+       English.click();
+       WebElement Arabic = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
+       Arabic.click();
+       Thread.sleep(5000);
+
+       WebElement mainbutton2 = wait
+               .until(ExpectedConditions.elementToBeClickable(this.mainButton));
+       mainbutton2.click();
+       WebElement Arabic2 = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
+       Arabic2.click();
+       Thread.sleep(5000);
+
+       WebElement English2 = wait.until(ExpectedConditions.elementToBeClickable(this.english));
+       English2.click();
+       Thread.sleep(5000);
+   }
     
-//    @Test (priority = 2)
-//    public void CulturalOrganizationTest() throws InterruptedException {
-//
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(200));
-//
-//        WebElement LetGoButton = wait.until(ExpectedConditions.elementToBeClickable(letGoButton));
-//        LetGoButton.click();
-//        driver.findElement(
-//                AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" 
-//                        + "new UiSelector().description(\"Cultural Organization\"))"));
-//
-//        WebElement CulturalOrganization2 = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(CulturalOrganization)));
-//        CulturalOrganization2.click();
-//
-//        
-//        WebElement moreButton = driver.findElement(this.moreButton);
-//        moreButton.click();
-//
-//
-//     WebElement icon1 = wait.until(ExpectedConditions.elementToBeClickable(this.icon1));
-//     icon1.click();
-//     for (int i = 0; i < 3; i++) {
-//         ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//         Thread.sleep(5000);
-//     }
-//
-//     WebElement icon2 = wait.until(ExpectedConditions.elementToBeClickable(this.icon2));
-//     icon2.click();
-//     ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//     Thread.sleep(5000);
-//
-//
-//     WebElement icon3 = wait.until(ExpectedConditions.elementToBeClickable(this.icon3));
-//     icon3.click();
-//     Thread.sleep(5000);
-//
-//    // ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//     
-//
-//     WebElement icon4 = wait.until(ExpectedConditions.elementToBeClickable(this.icon4));
-//     icon4.click();
-//     ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//     Thread.sleep(5000);
-//
-//
-//        WebElement image = wait.until(ExpectedConditions.elementToBeClickable(this.image));
-//        image.click();
-//        Thread.sleep(5000);
-//        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
-//        Thread.sleep(5000);
-//
-//        WebElement mainbutton = wait
-//                .until(ExpectedConditions.elementToBeClickable(this.mainButton));
-//        mainbutton.click();
-//
-//        WebElement English = wait.until(ExpectedConditions.elementToBeClickable(this.english));
-//        English.click();
-//        WebElement Arabic = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
-//        Arabic.click();
-//        Thread.sleep(5000);
-//
-//        WebElement mainbutton2 = wait
-//                .until(ExpectedConditions.elementToBeClickable(this.mainButton));
-//        mainbutton2.click();
-//        WebElement Arabic2 = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
-//        Arabic2.click();
-//        Thread.sleep(5000);
-//
-//        WebElement English2 = wait.until(ExpectedConditions.elementToBeClickable(this.english));
-//        English2.click();
-//        Thread.sleep(5000);
-//    }
+   @Test (priority = 2)
+   public void CulturalOrganizationTest() throws InterruptedException {
+
+       WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(200));
+
+       WebElement LetGoButton = wait.until(ExpectedConditions.elementToBeClickable(letGoButton));
+       LetGoButton.click();
+       driver.findElement(
+               AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(" 
+                       + "new UiSelector().description(\"Cultural Organization\"))"));
+
+       WebElement CulturalOrganization2 = wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(CulturalOrganization)));
+       CulturalOrganization2.click();
+
+       
+       WebElement moreButton = driver.findElement(this.moreButton);
+       moreButton.click();
+
+
+    WebElement icon1 = wait.until(ExpectedConditions.elementToBeClickable(this.icon1));
+    icon1.click();
+    for (int i = 0; i < 3; i++) {
+        ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+        Thread.sleep(5000);
+    }
+
+    WebElement icon2 = wait.until(ExpectedConditions.elementToBeClickable(this.icon2));
+    icon2.click();
+    ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+    Thread.sleep(5000);
+
+
+    WebElement icon3 = wait.until(ExpectedConditions.elementToBeClickable(this.icon3));
+    icon3.click();
+    Thread.sleep(5000);
+
+   // ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+    
+
+    WebElement icon4 = wait.until(ExpectedConditions.elementToBeClickable(this.icon4));
+    icon4.click();
+    ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+    Thread.sleep(5000);
+
+
+       WebElement image = wait.until(ExpectedConditions.elementToBeClickable(this.image));
+       image.click();
+       Thread.sleep(5000);
+       ((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+       Thread.sleep(5000);
+
+       WebElement mainbutton = wait
+               .until(ExpectedConditions.elementToBeClickable(this.mainButton));
+       mainbutton.click();
+
+       WebElement English = wait.until(ExpectedConditions.elementToBeClickable(this.english));
+       English.click();
+       WebElement Arabic = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
+       Arabic.click();
+       Thread.sleep(5000);
+
+       WebElement mainbutton2 = wait
+               .until(ExpectedConditions.elementToBeClickable(this.mainButton));
+       mainbutton2.click();
+       WebElement Arabic2 = wait.until(ExpectedConditions.elementToBeClickable(this.arabic));
+       Arabic2.click();
+       Thread.sleep(5000);
+
+       WebElement English2 = wait.until(ExpectedConditions.elementToBeClickable(this.english));
+       English2.click();
+       Thread.sleep(5000);
+   }
 
 
       
